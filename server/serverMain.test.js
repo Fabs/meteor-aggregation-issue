@@ -1,25 +1,6 @@
 import { chai } from 'meteor/practicalmeteor:chai';
 
 describe('Aggregation', function () {
-  it('learning meteor async tests with mocha, test should pass', function (done) {
-
-    setTimeout(function () {
-      chai.assert.equal( 1 , 1);
-      done()
-    }, 1000);
-
-  });
-
-  it('learning meteor tests with mocha, test should fail', function (done) {
-
-    setTimeout(function () {
-      chai.assert.equal( 1 , 2);
-      done()
-
-    }, 1000);
-
-  });
-
   it('works but is not ideal, test should pass', function (done) {
 
     Meteor.call('worksButNotIdealMethod', function( err , res){
